@@ -1,0 +1,28 @@
+#include<stdio.h>
+
+struct node
+{
+    int data;
+    struct node *next;
+};
+
+typedef struct node NODE;
+int main()
+{
+    NODE obj;
+
+    NODE *ptr=(NODE*)malloc(sizeof(NODE));
+    typedef struct node * PNODE;
+    typedef struct node ** PPNODE;
+    
+
+    obj.data=11;
+    obj.next=NULL;
+
+    ptr->data=11;
+    ptr->next=NULL;
+
+    
+
+    return 0;
+}
